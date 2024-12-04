@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>데이터 분석 플랫폼</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@3.9.1"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjs/11.5.0/math.min.js"></script>
+    
+
+</head>
+<body>
+    <header>
+        <h1>데이터 분석 플랫폼</h1>
+        <div>
+            <label for="rows">행 개수:</label>
+            <input type="number" id="rows" value="5">
+            <label for="columns">열 개수:</label>
+            <input type="number" id="columns" value="3">
+            <button onclick="generateTable()">테이블 생성</button>
+        </div>
+    </header>
+    <main>
+        <section>
+            <h2>데이터 입력</h2>
+            <table id="data-table">
+                <thead></thead>
+                <tbody></tbody>
+            </table>
+            <button onclick="calculateStats()">통계 계산</button>
+        </section>
+        <section id="results">
+            <h2>결과</h2>
+        </section>
+    </main>
+    <script src="index.js"></script>
+</body>
+</html>
